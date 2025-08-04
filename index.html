@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamandut Cake & Cookies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-container">
+      <div class="logo">
+        Mamandut Cake & Cookies
+        <a href="login_admin.html" class="login-btn">Login Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="fade-in">Menu Favorit Kami</h2>
+    <div class="menu-grid" id="menu-list">
+      <!-- Menu muncul dari JS -->
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content scale-in">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title">Mau pesan berapa?</h3>
+      <input type="number" id="quantity-input" placeholder="Jumlah" min="1">
+      <button id="confirm-btn">Pesan Sekarang</button>
+    </div>
+  </div>
+ <button id="music-toggle">🎵 Play Music</button>
+
+  <!-- Audio Background -->
+  <audio id="bg-music" loop>
+    <source src="assets/audio/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <footer>
+    © 2025 Mamandut Cake & Cookies 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

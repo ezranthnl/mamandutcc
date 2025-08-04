@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Mamandut Cake & Cookies</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍰 Admin Dashboard</h1>
+    <a href="index.html" class="logout-btn">Logout</a>
+  </header>
+
+  <main class="admin-container">
+    
+    <!-- Form Tambah Menu -->
+    <section class="add-menu">
+      <h2>Tambah Menu Baru</h2>
+      <form id="menu-form">
+        <input type="text" placeholder="Nama Menu" required>
+        <input type="number" placeholder="Harga (Rp)" required>
+        <input type="file" accept="image/*" required> <!-- Upload gambar -->
+        <textarea placeholder="Deskripsi singkat" rows="3"></textarea>
+        <button type="submit">Tambah Menu</button>
+      </form>
+    </section>
+
+    <!-- Preview Menu -->
+    <section class="menu-preview">
+      <h2>Preview Menu</h2>
+      <div class="menu-grid" id="menu-list">
+        <!-- Nanti data menu muncul di sini -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
